@@ -14,16 +14,16 @@
     </div>
     <div class="container">
       <header class="page-header">
-        <nav class="main-nav">
-          <a class="main-nav__logo">Cakes</a>
+        <nav class="page-header__main-nav main-nav">
+          <a class="main-nav__logo-header">Cakes</a>
           <button class="main-nav__btn main-nav__btn--close"  type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link">Наши торты</a></li>
-            <li class="site-list__item"><a class="site-list__link">Индивидуальный заказ</a></li>
-            <li class="site-list__item"><a class="site-list__link">Отзывы</a></li>
-            <li class="site-list__item"><a class="site-list__link">О нас</a></li>
-            <li class="site-list__item"><a class="site-list__link">Как заказать</a></li>
-            <li class="site-list__item"><a class="site-list__link">Контакты</a></li>
+          <ul class="main-nav__list site-list-header">
+            <li class="site-list-header__item"><a class="site-list__link">Наши торты</a></li>
+            <li class="site-list-header__item"><a class="site-list__link">Индивидуальный заказ</a></li>
+            <li class="site-list-header__item"><a class="site-list__link">Отзывы</a></li>
+            <li class="site-list-header__item"><a class="site-list__link">О нас</a></li>
+            <li class="site-list-header__item"><a class="site-list__link">Как заказать</a></li>
+            <li class="site-list-header__item"><a class="site-list__link">Контакты</a></li>
           </ul>
         </nav>
         <article class="page-header__intro intro">
@@ -159,7 +159,58 @@
             для вас и для вашего события.
           </p>
         </section>
+        <section class="page-main__conditions conditions">
+          <h3 class="conditions__title">Как заказать</h3>
+          <ol class="conditions__list">
+            <li class="conditions__list-item"><span class="conditions__list-item-title">Срок заказа</span>Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.
+            </li>
+            <li class="conditions__list-item"><span class="conditions__list-item-title">Доставка по городу</span>
+              Доставка в пределах города 200 рубей , при заказе на сумму более 2000 доставка бесплатно.
+            </li>
+            <li class="conditions__list-item"><span class="conditions__list-item-title">Доставка за городом</span>
+              Доставка за пределами города рассчитывается индивидуально.
+            </li>
+          </ol>
+          <img src="img/dilevery.png" alt="коробочка с тортом">
+        </section>
+        <section class="page-main__contacts contacts">
+          <h2 class="contacts__title">Остались вопросы?</h2>
+          <p class="contacts__form-feedback">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="email" name="email" placeholder="Email адрес">
+            <textarea name="comment" id="" cols="30" rows="10">Ваш вопрос</textarea>
+            <input type="submit" value="Отправить">
+          </form>
+          <p class="contacts__phone">Или позвоните по телефону:
+             +7 906 899 92 96</p>
+          <p class="contacts__email">Наша почта : bakerybypavel@mail.ru</p>
+          <p class="contacts__social">Мы в соц. сетях:</p>
+          <div class="contacts__social-block social-block-contacts">
+            <img src="img/insta__contacts.png" alt="Инстаграмм">
+            <img src="img/VK__contacts.png" alt="Вконтакте">
+          </div>
+        </section>
       </main>
+      <footer class="page-footer">
+        <a class="page-footer__logo">Cakes</a>
+        <ul class="page-footer__nav footer-nav">
+            <li class="footer-nav__item"><a class="footer-nav__link">Наши торты</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link">Индивидуальный заказ</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link">Отзывы</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link">О нас</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link">Как заказать</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link">Контакты</a></li>
+        </ul>
+        <p class="page-footer__phone">+7 906 899 92 96</p>
+        <div class="page-footer__social-footer social-footer">
+          <img src="img/insta__footer.png" alt="инстаграмм">
+          <img src="img/vk_footer.png" alt="вконтакте">
+        </div>
+        <div class="page-footer__copyright-block copyright-block">
+          <p>&#169; 2018 Cakes</p>
+        </div>
+      </footer>
     </div>
     <script src="js/picturefill.js"></script>
   </body>

@@ -17,16 +17,63 @@
 
 .main-nav__btn {
   position: absolute;
-  right: 19px;
-  top: 10px;
-  width: 20px;
-  height: 20px;
-  border: none;
   background: transparent;
-  outline: 2px solid green;
+
+  &--open {
+    display: block;
+    right: 19px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border: none;
+  }
+
+  &--open::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    top: 3px;
+    left: 1px;
+    background-color: #000000;
+    box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+  }
+
+  &--close {
+    display: block;
+    right: 19px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border: none;
+  }
+
+  &--close::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    top: 9px;
+    left: 1px;
+    background-color: #000;
+    transform: rotate(45deg);
+  }
+
+  &--close::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    top: 9px;
+    left: 1px;
+    background-color: #000;
+    transform: rotate(130deg);
+  }
 }
 
+
 .main-nav__list {
+  display: none;
   position: absolute;
   top: 40px;
   padding: 0;

@@ -168,25 +168,35 @@
         </section>
         <section class="page-main__conditions conditions">
           <h3 class="conditions__title">Как заказать</h3>
-          <ol class="conditions__list">
-            <li class="conditions__list-item"><span class="conditions__list-item-title">Срок заказа</span>Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.
-            </li>
-            <li class="conditions__list-item"><span class="conditions__list-item-title">Доставка по городу</span>
+          <dl class="conditions__list">
+            <dt class="conditions__list-title">
+              Срок заказа
+            </dt>
+            <dd class="conditions__list-description">
+              Размещать заказы желательно за <br> 2-3 дня. На выходные заказы лучше размещать минимум за неделю.
+            </dd>
+            <dt class="conditions__list-title">
+              Доставка по городу
+            </dt>
+            <dd class="conditions__list-description">
               Доставка в пределах города 200 рубей , при заказе на сумму более 2000 доставка бесплатно.
-            </li>
-            <li class="conditions__list-item"><span class="conditions__list-item-title">Доставка за городом</span>
+            </dd>
+            <dt class="conditions__list-title">
+              Доставка за городом
+            </dt>
+            <dd class="conditions__list-description">
               Доставка за пределами города рассчитывается индивидуально.
-            </li>
-          </ol>
-          <img src="img/dilevery.png" alt="коробочка с тортом">
+            </dd>
+          </dl>
         </section>
         <section class="page-main__contacts contacts">
-          <h2 class="contacts__title">Остались вопросы?</h2>
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__question">Остались вопросы?</p>
           <p class="contacts__form-feedback">Заполните форму ниже и наш кондитер свяжется с Вами</p>
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <input type="text" name="name" placeholder="Ваше имя">
-            <input type="email" name="email" placeholder="Email адрес">
-            <textarea name="comment" id="" cols="30" rows="10">Ваш вопрос</textarea>
+          <form action="https://echo.htmlacademy.ru" method="get" class="contacts__form">
+            <input type="text" name="name" placeholder="Ваше имя" class="contacts__input contacts__input--name">
+            <input type="email" name="email" placeholder="Email адрес" class="contacts__input contacts__input--email">
+            <textarea name="comment" id="" cols="30" rows="10" class="contacts__input contacts__input--text" placeholder="Ваш вопрос"></textarea>
             <input type="submit" value="Отправить">
           </form>
           <p class="contacts__phone">Или позвоните по телефону:

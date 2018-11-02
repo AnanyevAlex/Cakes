@@ -78,6 +78,10 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
+.no-mobile {
+  display: none;
+}
+
 @media (max-width: @mobile-width-only) {
   .container {
     max-width: 767px;
@@ -87,9 +91,7 @@ input[type="radio"].visually-hidden {
     display: none;
   }
 
-  .info-form__require {
-    display: none;
-  }
+
 }
 
 @media (min-width: @tablet-width) {
@@ -99,6 +101,10 @@ input[type="radio"].visually-hidden {
 
   .only-mobile {
     display: none;
+  }
+
+  .no-mobile {
+    display: block;
   }
 }
 

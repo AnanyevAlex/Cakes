@@ -24,10 +24,46 @@
 
   &--natural::before {
     background-image: url("../../img/intro-ingredients.png");
-
   }
 
   &--dilevery::before {
     background-image: url("../../img/intro-dilevery.png");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .intro-description {
+    display: flex;
+    justify-content: space-between;
+    width: 465px;
+    height: 60px;
+    margin: 0 0 0 45px;
+  }
+
+  .intro-description__item {
+    display: block;
+    margin: 19px 0 0 70px;
+    font-weight: bold;
+    width: 100px;
+
+    &--natural::before {
+      background-image: url("../../img/ingredients.png");
+      width: 55px;
+      height: 55px;
+      left: 2px;
+      top: 2px;
+    }
+
+    &--dilevery {
+      width: 175px;
+    }
+
+    &--dilevery::before {
+      background-image: url("../../img/intro-dilevery768.png");
+      width: 55px;
+      height: 55px;
+      left: 220px;
+      top: 2px;
+    }
   }
 }

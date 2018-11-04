@@ -21,6 +21,24 @@
   background-color: #ffffff;
 
   &:last-child {
-    margin: 0 auto 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .our-cake {
+    padding: 144px 0 0 0;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .our-cake__title {
+    margin: 0 0 42px 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 28px;
   }
 }

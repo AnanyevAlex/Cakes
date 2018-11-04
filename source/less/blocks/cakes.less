@@ -47,3 +47,47 @@
   line-height: 1;
   color: rgba(45, 40, 41, 0.7);
 }
+
+@media (min-width: @tablet-width) {
+  .cakes {
+    margin: 0 0 18px 0;
+    padding: 21px 0 0 29px;
+    width: 290px;
+    height: 185px;
+
+    &--classic {
+      background-image: url(../../img/bg_classic_cake768.jpg);
+      width: 420px;
+      height: 390px;
+    }
+
+    &--mousse {
+      background-image: url(../../img/bg_mousse_cake768.jpg);
+      padding-top: 18px;
+    }
+
+    &--wedding {
+      background-image: url(../../img/bg-wedding-cake768.jpg);
+    }
+
+    &--male {
+      background-image: url(../../img/bg_male_cake768.jpg);
+      padding-top: 27px;
+    }
+
+    &--female {
+      background-image: url(../../img/bg_female_cake768.jpg);
+      padding-top: 30px;
+    }
+
+    &--child {
+      background-image: url(../../img/bg_child__cale768.jpg);
+      background-color: #f4f2f5;
+      padding-top: 27px;
+      background-position: -9px -2px;
+      width: 420px;
+      height: 390px;
+      margin: 0;
+    }
+  }
+}

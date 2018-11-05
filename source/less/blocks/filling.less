@@ -68,14 +68,84 @@
 
 @media (min-width: @tablet-width) {
   .filling {
+    position: relative;
     display: flex;
+    padding: 34px 10px 55px 0;
+    margin-bottom: 24px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 40px;
+      left: 90px;
+      bottom: 158px;
+      background-image: url(../../img/slide_left.png);
+      background-repeat: no-repeat;
+
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 40px;
+      right: 50px;
+      bottom: 158px;
+      background-image: url(../../img/slide_right.png);
+      background-repeat: no-repeat;
+    }
   }
 
   .filling__title {
     display: block;
-    width: 150px;
+    margin: 0 0 0 45px;
+    width: 128px;
+    font-size: 18px;
+    line-height: 1;
+
+    &--number {
+      font-size: 36px;
+    }
+  }
+
+  .filling__filling-img  {
+    margin: 20px 0 0 0;
+  }
+
+  .filling__text {
+    padding: 45px 0 0 7px;
+  }
+
+  .filling__name {
     font-size: 18px;
   }
 
+  .filling__discription {
+    font-size: 14px;
+    width: 205px;
+    line-height: 120%;
+  }
 
+  .filling__price {
+    text-align: left;
+    margin: 0 0 0 18px;
+    font-size: 20px;
+  }
+
+  .filling__accept {
+    margin: 23px 0 0 20px;
+    width: 135px;
+    height: 42px;
+    font-size: 10px;
+  }
+
+  .filling__number-slide {
+    position: absolute;
+    right: 70px;
+    bottom: 37px;
+    font-family: "Circe", "arial", sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+  }
 }

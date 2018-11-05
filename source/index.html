@@ -88,18 +88,23 @@
           <h2 class="order__title">Индивидуальный заказ</h2>
           <p class="order__description">Соберите торт в 3 шага</p>
           <section class="order__selection-unit filling">
-            <h2 class="filling__title"><span class="filling__title--number">01</span>Выберите начинку</h2>
-            <img src="img/filling.png" alt="Фото начинки" class="filling__filling-img">
-            <img src="img/slide.png" alt="пример иконок слайда" class="only-mobile filling__slide-img">
+            <h2 class="filling__title"><span class="filling__title--number">01</span><br class="no-mobile">Выберите начинку</h2>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="">
+              <source media="(min-width: 768px)" srcset="img/filling768.png">
+              <img src="img/filling.png" alt="Фото начинки" class="filling__filling-img">
+            </picture>
+            <img src="img/slide.png" alt="пример иконок слайда" class="filling__slide-img only-mobile">
             <p class="filling__name only-mobile">Шоколадный ганаш</p>
             <p class="filling__discription only-mobile">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
             <p class="filling__price only-mobile">1000 руб/кг</p>
             <button class="filling__accept only-mobile">Выбрать</button>
-            <div class="no-mobile">
+            <div class="no-mobile filling__text">
               <p class="filling__name">Шоколадный ганаш</p>
               <p class="filling__discription">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
               <p class="filling__price">1000 руб/кг</p>
               <button class="filling__accept">Выбрать</button>
+              <p class="filling__number-slide">1/12</p>
             </div>
           </section>
           <section class="order__selection-unit cake-size">

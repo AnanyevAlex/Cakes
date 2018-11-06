@@ -108,21 +108,35 @@
             </div>
           </section>
           <section class="order__selection-unit cake-size">
-            <h2 class="cake-size__title"><span class="cake-size__title--number">02</span>Размер</h2>
-            <div class="cake-size__size">
+            <h2 class="cake-size__title"><span class="cake-size__title--number">02</span><br class="no-mobile">Размер</h2>
+            <img src="img/size-cake768.png" alt="Размеры тортов" class="cake-size__size768 no-mobile">
+            <div class="cake-size__size only-mobile">
               <p class="cake-size__size-name">1 кг</p>
             </div>
-            <img src="img/slide-size.png" alt="пример слайдера" class="cake-size__slide">
-            <p class="cake-size__discription">17-18 см <br> (1 кг – 6 персон)</p>
-            <button class="filling__accept">Выбрать</button>
+            <img src="img/slide-size.png" alt="пример слайдера" class="cake-size__slide only-mobile">
+            <p class="cake-size__discription only-mobile">17-18 см <br> (1 кг – 6 персон)</p>
+            <button class="cake-size__accept only-mobile">Выбрать</button>
           </section>
           <section class="order__selection-unit decor">
-            <h2 class="decor__title"><span class="decor__title--number">03</span>Оформление</h2>
-            <img src="img/cake-decor.jpg" alt="оформление торта" class="decor__decor-img">
-            <img src="img/slide.png" alt="Пример слайда" class="decor__slide-img">
-            <p class="decor__name">Маршмэллоу</p>
-            <p class="decor__price">600 руб/кг</p>
-            <button class="decor__accept">Выбрать</button>
+            <h2 class="decor__title"><span class="decor__title--number">03</span><br class="no-mobile">Оформление</h2>
+            <div class="decor__type-block no-mobile">
+              <div class="decor__type-item decor__type-item--classic">
+                <img src="img/cake-decor_classic768.jpg" alt="Классический торт" class="decor_decor-img decor_decor-img--classic no-mobile">
+              </div>
+              <div class="decor__type-item decor__type-item--marshmallow">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cake-decor_marshmallow768.jpg">
+                  <img src="img/decor_marshmallow.jpg" alt="оформление торта" class="decor__decor-img decor_decor-img-marshmallow">
+                  </picture>
+                  <p class="decor__name">Маршмэллоу</p>
+                  <p class="decor__price">600 руб/кг</p>
+              </div>
+            </div>
+            <img src="img/decor_marshmallow.jpg" alt="оформление торта" class="decor__decor-img only-mobile">
+            <img src="img/slide.png" alt="Пример слайда" class="decor__slide-img only-mobile">
+            <p class="decor__name only-mobile">Маршмэллоу</p>
+            <p class="decor__price only-mobile">600 руб/кг</p>
+            <button class="decor__accept only-mobile">Выбрать</button>
           </section>
           <section class="order__your-choice your-choice">
             <h2 class="your-choice__title">Ваш выбор</h2>

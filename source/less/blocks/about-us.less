@@ -27,3 +27,37 @@
   height: 153px;
 }
 
+@media (min-width: @tablet-width) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    padding: 125px 0 0 0;
+  }
+
+  .about-us__title {
+    text-align: left;
+    font-size: 28px;
+    margin: 0 0 8px 47px;
+  }
+
+  .about-us__photo {
+    position: absolute;
+    top: 115px;
+    right: 45px;
+  }
+
+  .about-us__social-block {
+    position: static;
+    justify-content: space-between;
+    margin: 0 0 0 47px;
+    height: 50px;
+    width: 145px;
+    order: 1;
+
+  }
+
+  .about-us__quote {
+    order: 2;
+  }
+
+}

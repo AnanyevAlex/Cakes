@@ -13,59 +13,20 @@
   font-size: 24px;
 }
 
-.feedback-block__photo {
-  display: block;
-  margin: 0 auto 5px;
-}
-
-.feedback-block__name {
-  margin: 0 0 5px 0;
-  text-align: center;
-  font-family: "Circe", "arial", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1;
-}
-
-.feedback-block__age {
-  margin: 0 0 8px 0;
-  text-align: center;
-  font-family: "Circe", "arial", sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1;
-}
-
-.feedback-block__text {
-  display: block;
-  margin: 0 auto 12px;
-  width: 240px;
-  text-align: center;
-  font-family: "Circe", "arial", sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.2;
-
-  &--more {
-    color: #f87b91;
-    font-style: italic;
-    text-decoration: underline;
-  }
-}
-
-.feedback-block__number {
-  margin: 0;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  color: #f50049;
-  font-family: "Circe", "arial", sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1;
-}
-
 .feedback-block__slide-img {
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback-block {
+    background-image: url(../../img/feedback_decor.png);
+    background-repeat: no-repeat;
+    background-position: 0px -10px;
+  }
+
+  .feedback-block__title {
+    font-size: 28px;
+    margin: 0 0 28px 0;
+  }
 }

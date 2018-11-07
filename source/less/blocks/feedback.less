@@ -1,0 +1,119 @@
+.feedback__photo {
+  display: block;
+  margin: 0 auto 5px;
+}
+
+.feedback__name {
+  margin: 0 0 5px 0;
+  text-align: center;
+  font-family: "Circe", "arial", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.feedback__age {
+  margin: 0 0 8px 0;
+  text-align: center;
+  font-family: "Circe", "arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.feedback__text {
+  display: block;
+  margin: 0 auto 12px;
+  width: 240px;
+  text-align: center;
+  font-family: "Circe", "arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.2;
+
+  &--more {
+    color: #f87b91;
+    font-style: italic;
+    text-decoration: underline;
+  }
+}
+
+.feedback__number {
+  margin: 0;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #f50049;
+  font-family: "Circe", "arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback {
+    display: flex;
+    position: relative;
+    width: 580px;
+    margin: 0 auto;
+    padding: 0 0 0 179px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 40px;
+      left: 86px;
+      bottom: 72px;
+      background-image: url(../../img/slide_left.png);
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 40px;
+      right: 87px;
+      bottom: 72px;
+      background-image: url(../../img/slide_right.png);
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+  }
+
+  .feedback__name {
+    font-size: 16px;
+    text-align: left;
+    margin: 0 0 2px 0;
+  }
+
+  .feedback__age {
+    font-size: 14px;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .feedback__text {
+    width: 255px;
+    margin: 0 0 16px 2px;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.25;
+  }
+
+  .feedback__number {
+    font-size: 12px;
+    right: 175px;
+    bottom: 0px;
+  }
+
+  .feedback__img-block {
+    padding: 26px 0 0 0;
+  }
+
+  .feedback__text-block {
+    padding: 0 0 0 22px;
+  }
+}

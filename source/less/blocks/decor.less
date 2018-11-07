@@ -59,10 +59,14 @@
   .decor {
     padding-top: 35px;
     position: relative;
-    min-height: 347px;
+    min-height: 315px;
+    background-image: url(../../img/decor_dop-decor.png);
+    background-repeat: no-repeat;
+    background-position: 3px 120px;
   }
 
   .decor__title {
+    position: absolute;
     margin: 0 0 0 45px;
     font-size: 18px;
 
@@ -71,11 +75,55 @@
     }
   }
 
+  .decor__price {
+    font-size: 14px;
+  }
+
   .decor .decor__type-block {
+    position: absolute;
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
-    width: 420px;
-    margin: 0 0 0 220px;
+    justify-content: space-around;
+    padding: 0 55px;
+    width: 555px;
+    margin: 3px 0 0 150px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 40px;
+      left: 0px;
+      bottom: 122px;
+      background-image: url(../../img/slide_left.png);
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 40px;
+      right: 5px;
+      bottom: 122px;
+      background-image: url(../../img/slide_right.png);
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+  }
+
+  .decor__type-item {
+    position: relative;
+  }
+
+  .decor__name-position {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 213px;
+    line-height: 1;
+    margin: 0 auto;
   }
 }
 

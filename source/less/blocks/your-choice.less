@@ -57,3 +57,70 @@
   font-weight: normal;
   font-size: 13px;
 }
+
+@media (min-width: @tablet-width) {
+  .your-choice {
+    position: relative;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0 20px;
+    width: 727px;
+    padding: 50px 0 0 45px;
+  }
+
+  .your-choice__title {
+    position: absolute;
+    font-size: 18px;
+    margin: 0;
+    left: 45px;
+    top: 20px;
+  }
+
+  .your-choice__block {
+    margin-right: 17px;
+  }
+
+  .your-choice__name {
+    font-size: 18px;
+    text-align: left;
+    margin: 0 0 6px 0;
+
+    &--filling {
+      width: 160px;
+    }
+
+    &--size {
+      width: 75px;
+      text-align: center;
+    }
+
+    &--decor {
+      width: 160px;
+    }
+  }
+
+  .your-choice__discription {
+    font-size: 12px;
+    margin: 0;
+
+    &--filling {
+      width: 160px;
+    }
+
+    &--size {
+      width: 75px;
+    }
+
+    &--decor {
+      width: 160px;
+    }
+  }
+
+  .your-choice__btn {
+    width: 160px;
+    height: 40px;
+    font-size: 10px;
+    margin: 20px 0px 45px 25px;
+  }
+}

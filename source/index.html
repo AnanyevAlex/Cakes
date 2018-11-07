@@ -122,14 +122,20 @@
             <div class="decor__type-block no-mobile">
               <div class="decor__type-item decor__type-item--classic">
                 <img src="img/cake-decor_classic768.jpg" alt="Классический торт" class="decor_decor-img decor_decor-img--classic no-mobile">
+                <div class="decor__name-position no-mobile">
+                  <p class="decor__name decor__name--classic">Ягодное ассорти</p>
+                <p class="decor__price decor__price--classic">700 руб/кг</p>
+                </div>
               </div>
               <div class="decor__type-item decor__type-item--marshmallow">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/cake-decor_marshmallow768.jpg">
                   <img src="img/decor_marshmallow.jpg" alt="оформление торта" class="decor__decor-img decor_decor-img-marshmallow">
                   </picture>
-                  <p class="decor__name">Маршмэллоу</p>
-                  <p class="decor__price">600 руб/кг</p>
+                  <div class="decor__name-position no-mobile">
+                    <p class="decor__name decor__name--marshmallow">Маршмэллоу</p>
+                    <p class="decor__price decor__price--marshmallow">600 руб/кг</p>
+                  </div>
               </div>
             </div>
             <img src="img/decor_marshmallow.jpg" alt="оформление торта" class="decor__decor-img only-mobile">
@@ -140,30 +146,47 @@
           </section>
           <section class="order__your-choice your-choice">
             <h2 class="your-choice__title">Ваш выбор</h2>
-            <p class="your-choice__name">Начинка</p>
-            <p class="your-choice__discription">Шоколадный ганаш</p>
-            <p class="your-choice__name">Размер</p>
-            <p class="your-choice__discription">1 кг</p>
-            <p class="your-choice__name">Оформление</p>
-            <p class="your-choice__discription your-choice__discription--margin">Маршмэллоу</p>
+            <div class="your-choice__block your-choice__filling">
+              <p class="your-choice__name your-choice__name--filling">Начинка</p>
+              <p class="your-choice__discription your-choice__discription--filling">Шоколадный ганаш</p>
+            </div>
+            <div class="your-choice__block your-choice__size">
+              <p class="your-choice__name your-choice__name--size">Размер</p>
+              <p class="your-choice__discription your-choice__discription--size only-mobile">1 кг</p>
+              <p class="your-choice__discription your-choice__discription--size no-mobile">2 кг</p>
+            </div>
+            <div class="your-choice__block your-choice__decor">
+              <p class="your-choice__name your-choice__name--decor">Оформление</p>
+              <p class="your-choice__discription your-choice__discription--margin your-choice__discription--decor">Маршмэллоу</p>
+            </div>
             <button class="your-choice__btn">Заказать торт</button>
           </section>
         </section>
         <section class="page-main__feedback-block feedback-block">
           <h2 class="feedback-block__title">Отзывы</h2>
           <div class="feedback-bloc__item feedback">
-            <img src="img/feedback-photo.png" alt="Фото человека" class="feedback-block__photo">
-            <p class="feedback-block__name">Мария</p>
-            <p class="feedback-block__age">юрист, 33 года</p>
-            <p class="feedback-block__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <span class="feedback-block__text--more">Развернуть</span></p>
-            <p class="feedback-block__number">1/26</p>
+            <div class="feedback__img-block">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/feedback-photo768.png">
+                <img src="img/feedback-photo.png" alt="Фото человека" class="feedback__photo">
+              </picture>
+            </div>
+            <div class="feedback__text-block">
+              <p class="feedback__name">Мария</p>
+              <p class="feedback__age">юрист, 33 года</p>
+              <p class="feedback__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только <br class="no-mobile"> у вас для наших семейных праздников:) <span class="feedback__text--more">Развернуть</span></p>
+              <p class="feedback__number">1/26</p>
+            </div>
           </div>
-          <img src="img/slide-about.png" alt="Пример слайда" class="feedback-block__slide-img">
+          <img src="img/slide-about.png" alt="Пример слайда" class="feedback-block__slide-img only-mobile">
         </section>
         <section class="page-main__about-us about-us">
           <h3 class="about-us__title">О нас</h3>
           <div class="about-us__photo">
-            <img src="img/confectioner.png" alt="Фото кондитера">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/confectioner768.png">
+              <img src="img/confectioner.png" alt="Фото кондитера">
+            </picture>
           </div>
           <div class="about-us__social-block social-block">
             <img src="img/insta.png" alt="инстаграмм" class="social-block__item">
@@ -181,7 +204,10 @@
           <div class="about-us__quote quote">
             <span class="quote__commas">’’</span>
             <p class="quote__text">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.</p>
-            <img src="img/signature.png" alt="подпись" class="qoute__autograph">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/signature768.png">
+              <img src="img/signature.png" alt="подпись" class="qoute__autograph">
+            </picture>
           </div>
         </section>
         <section class="page-main__advantages advantages">

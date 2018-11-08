@@ -108,3 +108,63 @@
   font-size: 14px;
   line-height: 1.2;
 }
+
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    position: relative;
+    display: flex;
+    padding: 80px 45px 80px;
+    background-image: url(../../img/contacts_decor.png);
+    background-repeat: no-repeat;
+    background-position: 310px 188px;
+  }
+
+  .contacts__title {
+    position: absolute;
+    top: 45px;
+    left: 47px;
+    font-size: 28px;
+  }
+
+  .contacts__block-feedback {
+    width: 362px;
+  }
+
+  .contacts__question {
+    margin: 0 0 16px;
+  }
+
+  .contacts__form-feedback {
+    width: 250px;
+    margin: 0 0 15px 2px;
+  }
+
+  .contacts__form {
+    width: 347px;
+  }
+
+  .contacts__input {
+    padding: 0 0 0 12px;
+
+    &--text {
+      padding: 15px 0 0 12px;
+    }
+  }
+
+  .contacts__form-submit {
+    width: 162px;
+    height: 42px;
+    margin: 8px 0px 0 1px;
+    font-size: 14px;
+  }
+
+  .contacts__block-contacts {
+    width: 300px;
+    padding: 45px 0 0 68px;
+  }
+
+  .contacts__social {
+    margin: 0 0 20px;
+  }
+}

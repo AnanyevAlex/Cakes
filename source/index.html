@@ -14,15 +14,15 @@
         <nav class="page-header__main-nav main-nav">
           <a class="main-nav__logo-header">Cakes</a>
           <button class="main-nav__btn main-nav__btn--open"  type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <p class="main-nav__phone no-mobile">+7 906 899 92 96</p>
           <ul class="main-nav__list site-list-header">
             <li class="site-list-header__item"><a class="site-list__link">Наши торты</a></li>
-            <li class="site-list-header__item"><a class="site-list__link">Индивидуальный заказ</a></li>
+            <li class="site-list-header__item site-list-header__item--active"><a class="site-list__link">Индивидуальный заказ</a></li>
             <li class="site-list-header__item"><a class="site-list__link">Отзывы</a></li>
             <li class="site-list-header__item"><a class="site-list__link">О нас</a></li>
             <li class="site-list-header__item"><a class="site-list__link">Как заказать</a></li>
             <li class="site-list-header__item"><a class="site-list__link">Контакты</a></li>
           </ul>
+          <p class="main-nav__phone no-mobile">+7 906 899 92 96</p>
         </nav>
         <article class="page-header__intro intro">
           <h1 class="intro__title">
@@ -290,22 +290,28 @@
         </section>
       </main>
       <footer class="page-footer">
-        <p class="page-footer__logo"><a >Cakes</a></p>
-        <ul class="page-footer__nav footer-nav">
+        <div class="page-footer__menu-block">
+          <p class="page-footer__logo"><a >Cakes</a></p>
+          <ul class="page-footer__nav footer-nav">
             <li class="footer-nav__item"><a class="footer-nav__link">Наши торты</a></li>
             <li class="footer-nav__item"><a class="footer-nav__link">Индивидуальный заказ</a></li>
             <li class="footer-nav__item"><a class="footer-nav__link">Отзывы</a></li>
             <li class="footer-nav__item"><a class="footer-nav__link">О нас</a></li>
             <li class="footer-nav__item"><a class="footer-nav__link">Как заказать</a></li>
             <li class="footer-nav__item"><a class="footer-nav__link">Контакты</a></li>
-        </ul>
-        <p class="page-footer__phone">+7 906 899 92 96</p>
-        <div class="page-footer__social-footer social-footer">
-          <img src="img/insta__footer.png" alt="инстаграмм" class="social-footer__item social-footer__item--instargam">
-          <img src="img/vk_footer.png" alt="вконтакте" class="social-footer__item social-footer__item--vk">
+          </ul>
+          <p class="page-footer__phone only-mobile">+7 906 899 92 96</p>
+          <div class="page-footer__social-footer social-footer only-mobile">
+            <img src="img/insta__footer.png" alt="инстаграмм" class="social-footer__item social-footer__item--instargam">
+            <img src="img/vk_footer.png" alt="вконтакте" class="social-footer__item social-footer__item--vk">
+          </div>
         </div>
         <div class="page-footer__copyright-block copyright-block">
           <p class="copyright-block__text"><span class="copyright-block__text--icon">&#169;</span> 2018 Cakes</p>
+          <div class="page-footer__social-footer social-footer no-mobile">
+            <img src="img/insta__footer.png" alt="инстаграмм" class="social-footer__item social-footer__item--instargam">
+            <img src="img/vk_footer.png" alt="вконтакте" class="social-footer__item social-footer__item--vk">
+          </div>
         </div>
       </footer>
     </div>

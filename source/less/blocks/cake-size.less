@@ -84,11 +84,33 @@
     }
   }
 
-  .cake-size__size768 {
+  .cake-size__size-nomobile {
     position: absolute;
     top: 75px;
     left: 0;
     right: 0;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cake-size  {
+    padding: 48px 10px 92px 0;
+    margin-bottom: 36px;
+    min-height: 570px;
+  }
+
+  .cake-size__title {
+    font-size: 27px;
+    margin: 0 0 0 80px;
+    line-height: 1.15;
+
+    &--number {
+      font-size: 64px;
+    }
+  }
+
+  .cake-size__size-nomobile {
+    top: 140px;
   }
 }

@@ -117,3 +117,58 @@
     padding: 0 0 0 22px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .feedback {
+    width: 880px;
+    box-sizing: border-box;
+    height: 227px;
+    margin: 0 auto;
+    padding: 0 0 0 120px;
+
+    &::after {
+      left: 0px;
+      bottom: 97px;
+    }
+
+    &::before {
+      right: 10px;
+      bottom: 97px;
+    }
+  }
+
+  .feedback__name {
+    font-size: 27px;
+    margin: 0 0 8px 0;
+  }
+
+  .feedback__age {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .feedback__text {
+    width: 365px;
+    font-size: 18.5px;
+    line-height: 1.3;
+
+    &--more {
+      font-size: 16px;
+    }
+  }
+
+  .feedback__number {
+    font-size: 18px;
+    right: 60px;
+    bottom: 0px;
+  }
+
+  .feedback__img-block {
+    padding: 3px 0 0 0;
+    width: 215px;
+  }
+
+  .feedback__text-block {
+    padding: 0 0 0 48px;
+  }
+}

@@ -125,5 +125,66 @@
     line-height: 1;
     margin: 0 auto;
   }
+
+  .decor__slide-number {
+    position: absolute;
+    right: 10px;
+    top: 238px;
+    font-family: "Circe", "arial", sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+  }
 }
 
+@media (min-width: @desktop-width) {
+  .decor {
+    min-height: 530px;
+    background-image: url(../../img/decor_dop-decor1366.png);
+    background-position: 16px 200px;
+  }
+
+  .decor__title {
+    margin: 2px 0 0 81px;
+    font-size: 27px;
+    line-height: 1.25;
+
+    &--number {
+      font-size: 65px;
+    }
+  }
+
+  .decor .decor__type-block {
+    margin: 28px 0 0 230px;
+    padding: 0 115px;
+    width: 955px;
+
+    &::before {
+      right: 40px;
+      bottom: 210px;
+    }
+
+    &::after {
+      left: 45px;
+      bottom: 210px;
+    }
+  }
+
+
+  .decor__name {
+    font-size: 20px;
+  }
+
+  .decor__price {
+    font-size: 22px;
+  }
+
+  .decor__name-position {
+    top: 356px;
+  }
+
+  .decor__slide-number {
+    font-size: 18px;
+    right: 33px;
+    top: 397px;
+  }
+}

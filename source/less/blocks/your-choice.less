@@ -24,7 +24,7 @@
   font-size: 20px;
 }
 
-.your-choice__discription {
+.your-choice__description {
   display: block;
   width: 240px;
   height: 28px;
@@ -37,7 +37,7 @@
   border-radius: 25px 25px 25px 25px;
   border: 1px solid #eaeaea;
 
-  &--margin {
+  &--decor {
     margin-bottom: 33px;
   }
 }
@@ -62,8 +62,6 @@
   .your-choice {
     position: relative;
     display: flex;
-    flex-grow: 0;
-    flex-shrink: 0;
     margin: 0 20px;
     width: 727px;
     padding: 50px 0 0 45px;
@@ -100,7 +98,7 @@
     }
   }
 
-  .your-choice__discription {
+  .your-choice__description {
     font-size: 12px;
     margin: 0;
 
@@ -122,5 +120,64 @@
     height: 40px;
     font-size: 10px;
     margin: 20px 0px 45px 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .your-choice {
+    margin: 0 auto;
+    width: 1220px;
+    padding: 80px 0 70px 70px;
+  }
+
+  .your-choice__title {
+    font-size: 27px;
+    left: 75px;
+    top: 27px;
+  }
+
+  .your-choice__name {
+    font-size: 27px;
+    margin: 0 0 15px;
+
+    &--decor {
+      margin: 0 0 10px;
+    }
+  }
+
+  .your-choice__description {
+    font-size: 18px;
+    border: none;
+
+    &--size {
+      text-align: left;
+      letter-spacing: 2px;
+    }
+
+    &--decor {
+      text-align: left;
+    }
+  }
+
+  .your-choice__block {
+    width: 252px;
+    height: 71px;
+    border-bottom: 1px solid #c1b0af;
+
+    &--filling {
+      margin-right: 82px;
+    }
+
+    &--size {
+      width: 138px;
+      margin-right: 83px;
+    }
+  }
+
+  .your-choice__btn {
+    width: 225px;
+    font-size: 13px;
+    height: 50px;
+    margin: 20px 0 0 0;
   }
 }

@@ -96,7 +96,7 @@
             </picture>
             <img src="img/slide.png" alt="пример иконок слайда" class="filling__slide-img only-mobile">
             <p class="filling__name only-mobile">Шоколадный ганаш</p>
-            <p class="filling__discription only-mobile">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+            <p class="filling__description only-mobile">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
             <p class="filling__price only-mobile">1000 руб/кг</p>
             <button class="filling__accept only-mobile">Выбрать</button>
             <div class="no-mobile filling__text">
@@ -117,14 +117,17 @@
               <p class="cake-size__size-name">1 кг</p>
             </div>
             <img src="img/slide-size.png" alt="пример слайдера" class="cake-size__slide only-mobile">
-            <p class="cake-size__discription only-mobile">17-18 см <br> (1 кг – 6 персон)</p>
+            <p class="cake-size__description only-mobile">17-18 см <br> (1 кг – 6 персон)</p>
             <button class="cake-size__accept only-mobile">Выбрать</button>
           </section>
           <section class="order__selection-unit decor">
             <h2 class="decor__title"><span class="decor__title--number">03</span><br class="no-mobile">Оформление</h2>
             <div class="decor__type-block no-mobile">
               <div class="decor__type-item decor__type-item--classic">
-                <img src="img/cake-decor_classic768.jpg" alt="Классический торт" class="decor_decor-img decor_decor-img--classic no-mobile">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/cake-decor_classic1366.png">
+                  <img src="img/cake-decor_classic768.jpg" alt="Классический торт" class="decor_decor-img decor_decor-img--classic no-mobile">
+                </picture>
                 <div class="decor__name-position no-mobile">
                   <p class="decor__name decor__name--classic">Ягодное ассорти</p>
                 <p class="decor__price decor__price--classic">700 руб/кг</p>
@@ -132,6 +135,7 @@
               </div>
               <div class="decor__type-item decor__type-item--marshmallow">
                 <picture>
+                  <source media="(min-width: 1200px)" srcset="img/cake-decor_marshmallow1366.png">
                   <source media="(min-width: 768px)" srcset="img/cake-decor_marshmallow768.jpg">
                   <img src="img/decor_marshmallow.jpg" alt="оформление торта" class="decor__decor-img decor_decor-img-marshmallow">
                   </picture>
@@ -140,6 +144,7 @@
                     <p class="decor__price decor__price--marshmallow">600 руб/кг</p>
                   </div>
               </div>
+              <p class="decor__slide-number no-mobile">2/35</p>
             </div>
             <img src="img/decor_marshmallow.jpg" alt="оформление торта" class="decor__decor-img only-mobile">
             <img src="img/slide.png" alt="Пример слайда" class="decor__slide-img only-mobile">
@@ -149,18 +154,18 @@
           </section>
           <section class="order__your-choice your-choice">
             <h2 class="your-choice__title">Ваш выбор</h2>
-            <div class="your-choice__block your-choice__filling">
+            <div class="your-choice__block your-choice__block--filling">
               <p class="your-choice__name your-choice__name--filling">Начинка</p>
-              <p class="your-choice__discription your-choice__discription--filling">Шоколадный ганаш</p>
+              <p class="your-choice__description your-choice__description--filling">Шоколадный ганаш</p>
             </div>
-            <div class="your-choice__block your-choice__size">
+            <div class="your-choice__block your-choice__block--size">
               <p class="your-choice__name your-choice__name--size">Размер</p>
-              <p class="your-choice__discription your-choice__discription--size only-mobile">1 кг</p>
-              <p class="your-choice__discription your-choice__discription--size no-mobile">2 кг</p>
+              <p class="your-choice__description your-choice__description--size only-mobile">1 кг</p>
+              <p class="your-choice__description your-choice__description--size no-mobile">2 кг</p>
             </div>
-            <div class="your-choice__block your-choice__decor">
+            <div class="your-choice__block your-choice__block--decor">
               <p class="your-choice__name your-choice__name--decor">Оформление</p>
-              <p class="your-choice__discription your-choice__discription--margin your-choice__discription--decor">Маршмэллоу</p>
+              <p class="your-choice__description your-choice__description--decor">Маршмэллоу</p>
             </div>
             <button class="your-choice__btn">Заказать торт</button>
           </section>

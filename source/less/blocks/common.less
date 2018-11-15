@@ -86,6 +86,10 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
+.no-tablet {
+  display: none;
+}
+
 @media (max-width: @mobile-width-only) {
   .container {
     max-width: 767px;
@@ -94,8 +98,6 @@ input[type="radio"].visually-hidden {
   .tablet-width {
     display: none;
   }
-
-
 }
 
 @media (min-width: @tablet-width) {
@@ -114,6 +116,10 @@ input[type="radio"].visually-hidden {
   .only-tablet {
     display: block;
   }
+
+  .no-tablet {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -126,6 +132,10 @@ input[type="radio"].visually-hidden {
   }
 
   .only-desktop {
+    display: block;
+  }
+
+  .no-tablet {
     display: block;
   }
 }

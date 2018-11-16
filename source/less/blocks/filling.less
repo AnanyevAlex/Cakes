@@ -52,6 +52,7 @@
 
 .filling__accept {
   display: block;
+  outline: none;
   margin: 0 auto 24px;
   padding: 0;
   background-color: #f50049;
@@ -64,6 +65,11 @@
   font-family: "Circe", "arial", sans-serif;
   font-weight: normal;
   font-size: 13px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 5px 7.04px 0.96px rgba(255, 0, 67, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {

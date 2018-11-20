@@ -1,4 +1,5 @@
 .conditions {
+  position: relative;
   margin: 0;
   padding: 30px 0 125px;
   background-color: #e3353d;
@@ -40,6 +41,33 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 1.2;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 40px;
+    right: 260px;
+    top: 75px;
+    font-family: "Playfair", "arial", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: #ffffff;
+  }
+
+  &--first::before {
+    content: "1";
+  }
+
+  &--second::before {
+    content: "2";
+    top: 168px;
+  }
+
+  &--third::before {
+    content: "3";
+    top: 258px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -64,8 +92,24 @@
     margin: 0 0 32px;
     line-height: 1.2;
 
+    &::before {
+      right: 418px;
+    }
+
+    &--first::before {
+      top: 100px;
+    }
+
     &--second {
       width: 350px;
+
+      &::before {
+        top: 200px;
+      }
+    }
+
+    &--third::before {
+      top: 284px;
     }
   }
 }
@@ -97,12 +141,33 @@
     font-size: 20px;
     line-height: 1.2;
 
+    &::before {
+      font-size: 64px;
+      right: 511px;
+      width: 30px;
+      height: 70px;
+    }
+
     &--first {
       width: 400px;
+
+      &::before {
+        top: 180px;
+      }
     }
 
     &--second {
       width: 450px;
+
+      &::before {
+        right: 520px;
+        top: 312px;
+      }
+    }
+
+    &--third::before {
+      top: 417px;
+      right: 518px;
     }
   }
 }

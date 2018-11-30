@@ -15,21 +15,29 @@
   margin: 0 0 0 20px;
 }
 
-.main-nav__btn {
+.main-nav__btn-open {
   position: absolute;
   background: transparent;
   cursor: pointer;
+  display: block;
+  right: 19px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  border: none;
 
-  &--open {
-    display: block;
-    right: 19px;
-    top: 10px;
-    width: 20px;
-    height: 20px;
-    border: none;
+  &:hover::before {
+    background-color: red;
+    box-shadow: 0 6px 0 0 red, 0 12px 0 0 red;
+    transition: 0.5s;
+
   }
 
-  &--open::before {
+  &--none {
+    display: none;
+  }
+
+  &::before {
     content: "";
     position: absolute;
     width: 18px;
@@ -39,17 +47,24 @@
     background-color: #000000;
     box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
   }
+}
 
-  &--close {
-    display: block;
-    right: 19px;
-    top: 10px;
-    width: 20px;
-    height: 20px;
-    border: none;
+.main-nav__btn-close {
+  position: absolute;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  right: 19px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  border: none;
+
+  &--none {
+    display: none;
   }
 
-  &--close::after {
+  &::after {
     content: "";
     position: absolute;
     width: 18px;
@@ -60,7 +75,7 @@
     transform: rotate(45deg);
   }
 
-  &--close::before {
+  &::before {
     content: "";
     position: absolute;
     width: 18px;

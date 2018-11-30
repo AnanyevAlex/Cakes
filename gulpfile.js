@@ -112,5 +112,5 @@ gulp.task("serve", function() {
 
   gulp.watch("source/less/**/*.less", ["style"]);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
-  gulp.watch("source/js/*.js", ["uglify"]);
+  gulp.watch("source/js/*.js", ["uglify"]).on("change", server.reload);
 });
